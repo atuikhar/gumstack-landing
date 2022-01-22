@@ -11,7 +11,7 @@ import {
   MobileNavContainer,
   NavItem,
   TextNav,
-  DownIcon,
+  Arrow,
 } from './HeaderStyles'
 
 const Header = () => {
@@ -48,7 +48,7 @@ const Header = () => {
           onClick={handleClick}
         >
           Use Cases
-          <DownIcon />
+          <Arrow src="/ArrowDown.png" />
         </Text>
         <Menu
           id="fade-menu"

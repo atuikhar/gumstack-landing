@@ -1,6 +1,5 @@
 import styled from 'styled-components'
 import { Container } from '@mui/material'
-import ArrowForwardIcon from '@mui/icons-material/ArrowForward'
 
 export const Wrapper = styled.div`
   background: #231741;
@@ -119,7 +118,8 @@ export const Circle = styled.div`
   }
 `
 export const Image1 = styled.img`
-  padding: 7px;
+  height: 437px;
+  margin-bottom: 10px;
   @media ${(props) => props.theme.breakpoints.sm} {
     height: 340px;
     padding: 0;
@@ -134,6 +134,7 @@ export const Image2 = styled.img`
   }
 `
 
-export const ArrowIcon = styled(ArrowForwardIcon)`
-  padding-left: 10px;
+export const Arrow = styled.img`
+  padding-left: 20px;
+  height: 10px;
 `

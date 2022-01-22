@@ -9,15 +9,15 @@ import {
   Circle,
   Image1,
   Image2,
-  ArrowIcon,
   BtnText,
+  Arrow,
 } from './HeroStyles'
 
 const Hero = () => {
   return (
     <Wrapper>
       <Grid container spacing={2}>
-        <Grid item xs={12} md={6} lg={6} xl={6} xxl={6}>
+        <Grid item xs={12} sm={6} md={6} lg={6}>
           <HeroWrapper>
             <Title>Meet Your Customers Face-to-Face</Title>
             <Text>Instantly on your website/app</Text>
@@ -29,12 +29,12 @@ const Hero = () => {
             <SubmitEmail>
               <BtnText>
                 Register for a Demo
-                <ArrowIcon sx={{ fontSize: '30px' }} />
+                <Arrow src="/Arrow.png" />
               </BtnText>
             </SubmitEmail>
           </HeroWrapper>
         </Grid>
-        <Grid item xs={12} md={6} lg={6} xl={6} xxl={6}>
+        <Grid item xs={12} sm={6} md={6} lg={6} sx={{ marginBottom: '100px' }}>
           <Circle>
             <Image1 src="/imagehalf.png" />
             <Image2 src="/play.png" />

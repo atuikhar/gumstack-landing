@@ -1,6 +1,5 @@
 import styled from 'styled-components'
 import { MenuItem } from '@mui/material'
-import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown'
 import MenuIcon from '@mui/icons-material/Menu'
 
 export const Wrapper = styled.div`
@@ -102,7 +101,10 @@ export const NavItem = styled(MenuItem)`
   }
 `
 
-export const DownIcon = styled(ArrowDropDownIcon)``
+export const Arrow = styled.img`
+  height: 5px;
+  margin: 5px;
+`
 
 export const MobileNav = styled(MenuIcon)`
   color: #fff;
