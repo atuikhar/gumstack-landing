@@ -11,6 +11,10 @@ export const Wrapper = styled(Container)`
 export const Wrapper1 = styled(Container)`
   margin-top: 100px;
 `
+export const Wrapper2 = styled.div`
+  margin-bottom: 50px;
+  text-align: center;
+`
 export const Div = styled.div`
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -68,4 +72,34 @@ export const Image = styled.img`
   height: 50px;
   width: 50px;
   cursor: pointer;
+`
+export const Arrow = styled.img`
+  padding-left: 20px;
+  height: 10px;
+`
+
+export const GetStarted = styled.button`
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 100px;
+  margin-left: 20px;
+  width: 272px;
+  height: 48px;
+  border-radius: 4px;
+  background: #5f6fbf;
+  border: none;
+
+  &:hover {
+  }
+  @media ${(props) => props.theme.breakpoints.sm} {
+    margin-top: 70px;
+  }
+`
+export const BtnText = styled.h2`
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 27px;
+  letter-spacing: 0em;
 `

@@ -7,6 +7,10 @@ import {
   Image,
   Div,
   Wrapper1,
+  Arrow,
+  BtnText,
+  GetStarted,
+  Wrapper2,
 } from './FunctionalitiesStyles'
 import { data } from 'constants/data'
 
@@ -36,6 +40,14 @@ const Functionalities = () => {
             )
           })}
         </Div>
+        <Wrapper2>
+          <GetStarted>
+            <BtnText>
+              Get Started For Free
+              <Arrow src="/Arrow.png" />
+            </BtnText>
+          </GetStarted>
+        </Wrapper2>
       </Wrapper1>
     </>
   )

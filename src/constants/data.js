@@ -44,37 +44,10 @@ export const data = [
   },
 ]
 
-export const testimony = [
-  {
-    img: '/data-management.png',
-    title: 'You Are In Food Company',
-    rating: '4.5',
-    name: 'Sameen Eajaz',
-    company: 'COO, Co-Founder, Koskii',
-    desc: 'The app is exactly what we were looking for and has helped us add another sales channel very quickly.',
-  },
-  {
-    img: '/data-management.png',
-    title: 'You Are In Good Company',
-    rating: '4.5',
-    name: 'Sameen Eajaz',
-    company: 'COO, Co-Founder, Koskii',
-    desc: 'The app is exactly what we were looking for and has helped us add another sales channel very quickly.',
-  },
-  {
-    img: '/data-management.png',
-    title: 'You Are In Food Company',
-    rating: '5',
-    name: 'Sameen Eajaz',
-    company: 'COO, Co-Founder, Koskii',
-    desc: 'The app is exactly what we were looking for and has helped us add another sales channel very quickly.',
-  },
-]
-
 export const contact = [
   { title: 'Use Cases', list: ['Retail', 'E-Commerce', 'Saas'] },
   { title: 'Integrations', list: ['Shopify', 'Google Tag Manager'] },
-  { title: 'Compare', list: ['WhatsApp', 'FaceTime'] },
+  { title: 'Compare', list: ['vs WhatsApp', 'vs FaceTime'] },
   { title: 'Support', list: ['Talk To Us On Gumstack', 'Chat With Us'] },
   { title: 'Resources', list: ['Developers API', 'Download Agent Apps'] },
 ]
