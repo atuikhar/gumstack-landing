@@ -5,7 +5,7 @@ export const Wrapper = styled(Container)`
   text-align: center;
   margin-top: 100px;
   @media ${(props) => props.theme.breakpoints.sm} {
-    margin-top: 50px;
+    margin-top: 100px;
   }
 `
 export const Wrapper1 = styled(Container)`

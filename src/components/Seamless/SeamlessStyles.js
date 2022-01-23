@@ -25,9 +25,11 @@ export const Title = styled.h1`
   color: ${(props) => props.theme.colors.dark};
   font-family: ${(props) => props.theme.fonts.main};
   @media ${(props) => props.theme.breakpoints.sm} {
-    font-size: 25px;
-    font-weight: 500;
-  line-height: 40px;
+font-size: 28px;
+font-weight: 800;
+line-height: 40px;
+letter-spacing: 0em;
+
 
   }
   }
@@ -45,6 +47,11 @@ export const Paragraph = styled.h5`
   }
   @media ${(props) => props.theme.breakpoints.sm} {
     margin: 0;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0em;
   }
 `
 

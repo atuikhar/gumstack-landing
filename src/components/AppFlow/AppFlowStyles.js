@@ -45,13 +45,34 @@ export const Title = styled.h1`
   font-weight: 800;
   line-height: 44px;
   letter-spacing: 0em;
-  font-size: 30px;
+  font-size: 35px;
+  font-family: ${(props) => props.theme.fonts.main};
+  @media ${(props) => props.theme.breakpoints.md} {
+    font-size: 25px;
+  }
+  @media ${(props) => props.theme.breakpoints.sm} {
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 40px;
+    letter-spacing: 0em;
+  }
+`
+export const Title2 = styled.h1`
+  font-weight: 500;
+  line-height: 44px;
+  letter-spacing: 0em;
+  font-size: 25px;
   font-family: ${(props) => props.theme.fonts.main};
   @media ${(props) => props.theme.breakpoints.md} {
     font-size: 25px;
   }
   @media ${(props) => props.theme.breakpoints.sm} {
     font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 30px;
+    letter-spacing: 0em;
   }
 `
 export const Paragraph = styled.h5`
@@ -63,6 +84,13 @@ export const Paragraph = styled.h5`
   margin-top: 100px;
 
   font-family: ${(props) => props.theme.fonts.main};
+  @media ${(props) => props.theme.breakpoints.sm} {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0em;
+  }
 `
 
 export const ShowImg = styled.img`

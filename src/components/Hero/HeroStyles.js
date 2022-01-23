@@ -34,12 +34,12 @@ export const HeroWrapper = styled(Container)`
 `
 
 export const Title = styled.h1`
-  font-size: 50px;
+  font-size: 40px;
   font-family: ${(props) => props.theme.fonts.main};
   color: ${(props) => props.theme.colors.light};
   font-style: normal;
-  font-weight: 600;
-  line-height: 68px;
+  font-weight: 700;
+  line-height: 50px;
   letter-spacing: 0em;
   @media ${(props) => props.theme.breakpoints.sm} {
     margin-left: 0;
@@ -57,7 +57,7 @@ export const Title = styled.h1`
   }
 `
 
-export const Text = styled.h3`
+export const TextBig = styled.h3`
   color: #ffa339;
   font-family: ${(props) => props.theme.fonts.main};
   font-size: 24px;
@@ -65,11 +65,25 @@ export const Text = styled.h3`
   font-weight: 600;
   line-height: 36px;
   letter-spacing: 0em;
-  @media ${(props) => props.theme.breakpoints.sm} {
-    margin-left: 0;
+
+  @media ${(props) => props.theme.breakpoints.md} {
+    display: none;
   }
 `
 
+export const TextSmall = styled.h3`
+  color: #ffa339;
+  font-family: ${(props) => props.theme.fonts.main};
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 36px;
+  letter-spacing: 0em;
+  display: none;
+  @media ${(props) => props.theme.breakpoints.md} {
+    display: block;
+  }
+`
 export const Paragraph = styled.h5`
   margin-top: 15px;
   color: ${(props) => props.theme.colors.light};

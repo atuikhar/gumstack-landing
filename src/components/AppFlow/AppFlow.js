@@ -2,6 +2,7 @@ import { Grid, ListItemAvatar } from '@mui/material'
 import {
   Wrapper,
   Title,
+  Title2,
   Text,
   Paragraph,
   CheckIcon,
@@ -41,7 +42,7 @@ const AppFlow = () => {
               <ShowImg src="/Date.png" />
             </GridWrapper>
             <Grid item xs={12} sm={12} md={12} lg={6}>
-              <Paragraph>Schedule callback when you are not around </Paragraph>
+              <Title2>Schedule callback when you are not around </Title2>
               <GridContent>
                 <ListItemContainer>
                   <ListItemAvatar>
@@ -76,10 +77,10 @@ const AppFlow = () => {
               lg={7}
               order={{ xs: 5, sm: 5, md: 3, lg: 3 }}
             >
-              <Paragraph>
+              <Title2>
                 Sync your team’s calendar and manage schedules without a
                 separate calendar software
-              </Paragraph>
+              </Title2>
               <GridContent>
                 <ListItemContainer>
                   <ListItemAvatar>

@@ -62,8 +62,7 @@ export const ShowImg = styled.img`
   @media ${(props) => props.theme.breakpoints.lg} {
     width: 400px;
   }
-  @media screen and (max-width: 899px) {
-  }
+
   @media ${(props) => props.theme.breakpoints.md} {
   }
   @media ${(props) => props.theme.breakpoints.sm} {
