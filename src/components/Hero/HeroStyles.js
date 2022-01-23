@@ -3,15 +3,30 @@ import { Container } from '@mui/material'
 
 export const Wrapper = styled.div`
   background: #231741;
-  height: 100%;
-  @media ${(props) => props.theme.breakpoints.sm} {
+  height: 100vh;
+
+  @media ${(props) => props.theme.breakpoints.lg} {
     height: 100%;
+  }
+`
+export const WrapContent = styled(Container)`
+  @media ${(props) => props.theme.breakpoints.lg} {
+    text-align: center;
   }
 `
 
 export const HeroWrapper = styled(Container)`
   text-align: start;
   margin-top: 100px;
+
+  @media ${(props) => props.theme.breakpoints.lg} {
+    margin-top: 10px;
+    text-align: center;
+  }
+  @media ${(props) => props.theme.breakpoints.md} {
+    margin-top: 10px;
+    text-align: center;
+  }
   @media ${(props) => props.theme.breakpoints.sm} {
     margin-top: 10px;
     text-align: center;
@@ -19,7 +34,6 @@ export const HeroWrapper = styled(Container)`
 `
 
 export const Title = styled.h1`
-  margin-left: 100px;
   font-size: 50px;
   font-family: ${(props) => props.theme.fonts.main};
   color: ${(props) => props.theme.colors.light};
@@ -29,11 +43,21 @@ export const Title = styled.h1`
   letter-spacing: 0em;
   @media ${(props) => props.theme.breakpoints.sm} {
     margin-left: 0;
+    font-size: 25px;
+    font-weight: 800;
+    line-height: 30px;
+  }
+  @media ${(props) => props.theme.breakpoints.md} {
+    margin-left: 0;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 50px;
+    letter-spacing: 0em;
   }
 `
 
 export const Text = styled.h3`
-  margin-left: 100px;
   color: #ffa339;
   font-family: ${(props) => props.theme.fonts.main};
   font-size: 24px;
@@ -47,7 +71,6 @@ export const Text = styled.h3`
 `
 
 export const Paragraph = styled.h5`
-  margin-left: 100px;
   margin-top: 15px;
   color: ${(props) => props.theme.colors.light};
   font-family: ${(props) => props.theme.fonts.main};
@@ -57,7 +80,6 @@ export const Paragraph = styled.h5`
   line-height: 24px;
   letter-spacing: 0em;
   @media ${(props) => props.theme.breakpoints.sm} {
-    margin-left: 0;
     margin-top: 20px;
   }
 `
@@ -66,22 +88,21 @@ export const SubmitEmail = styled.button`
   color: #fff;
   font-weight: bold;
   cursor: pointer;
-  margin: 100px;
   width: 300px;
   height: 52px;
   border-radius: 4px;
   background: #ff3d6b;
   border: none;
+  margin-top: 70px;
 
-  &:hover {
-  }
   @media ${(props) => props.theme.breakpoints.lg} {
-    margin-top: 20px;
+    margin-top: 100px;
+    margin-bottom: 100px;
   }
   @media ${(props) => props.theme.breakpoints.sm} {
-    margin: 10px;
     margin-top: 60px;
     margin-bottom: 60px;
+    width: 200px;
   }
 `
 
@@ -97,40 +118,23 @@ export const BtnText = styled.h3`
   align-items: center;
 `
 
-export const Circle = styled.div`
+export const Image = styled.img`
   cursor: pointer;
-  width: 450px;
-  height: 450px;
-  margin-top: 100px;
-  margin-left: 100px;
-  border-radius: 50%;
-  border: 6px dashed rgba(255, 163, 57, 0.8);
-  background-image: url('/imagefull.png');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-
-  @media ${(props) => props.theme.breakpoints.sm} {
-    margin-left: 10px;
-    margin-top: 10px;
-    width: 350px;
-    height: 350px;
+  @media ${(props) => props.theme.breakpoints.xl} {
+    width: 380px;
   }
-`
-export const Image1 = styled.img`
-  height: 437px;
-  margin-bottom: 10px;
-  @media ${(props) => props.theme.breakpoints.sm} {
-    height: 340px;
-    padding: 0;
+  @media screen and (max-width: 899px) {
   }
-`
-
-export const Image2 = styled.img`
-  margin-bottom: 170px;
-  margin-left: -50px;
+  @media ${(props) => props.theme.breakpoints.lg} {
+    width: 340px;
+    margin-bottom: 100px;
+  }
+  @media ${(props) => props.theme.breakpoints.md} {
+    margin-bottom: 100px;
+  }
   @media ${(props) => props.theme.breakpoints.sm} {
-    margin-bottom: 130px;
+    width: 250px;
+    margin-bottom: 50px;
   }
 `
 

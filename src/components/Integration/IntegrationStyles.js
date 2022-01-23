@@ -1,51 +1,132 @@
 import styled from 'styled-components'
-
 import { Container, ListItem } from '@mui/material'
 
-export const Wrapper = styled.div`
-  margin-top: 100px;
-  padding-top: 100px;
-  background: linear-gradient(0deg, #fff9fa, #fff9fa), #0d012c;
-  @media ${(props) => props.theme.breakpoints.sm} {
-    margin-top: 50px;
-    margin-bottom: 50px;
+export const Wrap = styled(Container)``
+export const Wrap1 = styled(Container)`
+  @media ${(props) => props.theme.breakpoints.lg} {
     text-align: center;
   }
 `
 
-export const WrapperDiv1 = styled(Container)`
-  @media ${(props) => props.theme.breakpoints.sm} {
-    margin-left: 0px;
-  }
-`
+export const IntegrationWrapper = styled.div`
+  margin-top: 100px;
+  padding-top: 100px;
+  margin-bottom: 100px;
+  background: linear-gradient(0deg, #fff9fa, #fff9fa), #0d012c;
 
-export const Text = styled.h1`
-  font-size: 15px;
-  font-weight: 500;
-  line-height: 20px;
-  letter-spacing: 0em;
-
-  font-family: ${(props) => props.theme.fonts.main};
   @media ${(props) => props.theme.breakpoints.sm} {
-    font-size: 15px;
+    margin-top: 50px;
+    margin-bottom: 50px;
   }
 `
 
 export const Title = styled.h1`
-  font-weight: 800;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 600;
   line-height: 44px;
   letter-spacing: 0em;
-  font-size: 30px;
+  text-align: left;
+
   font-family: ${(props) => props.theme.fonts.main};
-  @media ${(props) => props.theme.breakpoints.md} {
-    font-size: 25px;
-  }
-  @media ${(props) => props.theme.breakpoints.sm} {
-    font-size: 20px;
+  @media ${(props) => props.theme.breakpoints.lg} {
+    text-align: center;
+    @media ${(props) => props.theme.breakpoints.sm} {
+    }
   }
 `
-export const CheckIcon = styled.img``
 
+export const Text = styled.h4`
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: left;
+
+  margin-top: 20px;
+
+  color: ${(props) => props.theme.colors.dark};
+  font-family: ${(props) => props.theme.fonts.main};
+
+  @media ${(props) => props.theme.breakpoints.md} {
+  }
+  @media ${(props) => props.theme.breakpoints.sm} {
+  }
+`
+
+export const ShowImg = styled.img`
+  @media ${(props) => props.theme.breakpoints.xl} {
+    width: 500px;
+  }
+  @media ${(props) => props.theme.breakpoints.lg} {
+    width: 400px;
+  }
+  @media screen and (max-width: 899px) {
+  }
+  @media ${(props) => props.theme.breakpoints.md} {
+  }
+  @media ${(props) => props.theme.breakpoints.sm} {
+    width: 250px;
+  }
+`
+
+export const Arrow = styled.img`
+  padding-left: 10px;
+  height: 10px;
+`
+
+export const BtnText = styled.h2`
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 27px;
+  letter-spacing: 0em;
+  padding-top: 10px;
+  padding-left: 10px;
+  @media ${(props) => props.theme.breakpoints.sm} {
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 27px;
+  }
+`
+
+export const Div = styled.div`
+  text-align: start;
+
+  @media ${(props) => props.theme.breakpoints.sm} {
+    margin: 0px;
+  }
+`
+
+export const Div1 = styled.div`
+  text-align: start;
+  @media ${(props) => props.theme.breakpoints.md} {
+    text-align: center;
+    margin-top: 50px;
+  }
+  @media ${(props) => props.theme.breakpoints.xl} {
+    margin-top: -100px;
+  }
+  @media ${(props) => props.theme.breakpoints.lg} {
+    margin-top: 50px;
+    text-align: center;
+  }
+`
+export const Div2 = styled.div`
+  @media ${(props) => props.theme.breakpoints.xl} {
+  }
+  @media ${(props) => props.theme.breakpoints.lg} {
+  }
+  @media screen and (max-width: 899px) {
+  }
+
+  @media ${(props) => props.theme.breakpoints.md} {
+  }
+  @media ${(props) => props.theme.breakpoints.sm} {
+    margin: 0;
+  }
+`
 export const ListItemContainer = styled(ListItem)`
   margin-top: 20px;
   @media ${(props) => props.theme.breakpoints.sm} {
@@ -53,29 +134,7 @@ export const ListItemContainer = styled(ListItem)`
     padding: 1px;
   }
 `
-
-export const IntegrationTechImage = styled.img`
-  cursor: pointer;
-  border-radius: 50%;
-  @media ${(props) => props.theme.breakpoints.sm} {
-    width: 345px;
-  }
-`
-export const Paragraph = styled.h5`
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: 28px;
-  letter-spacing: 0em;
-  margin-top: 100px;
-
-  font-family: ${(props) => props.theme.fonts.main};
-`
-
-export const Arrow = styled.img`
-  padding-left: 20px;
-  height: 10px;
-`
+export const CheckIcon = styled.img``
 
 export const TalkToDeveloper = styled.button`
   color: #fff;
@@ -86,22 +145,11 @@ export const TalkToDeveloper = styled.button`
   border-radius: 4px;
   background: #5f6fbf;
   border: none;
-  margin-left: 50px;
   margin-bottom: 100px;
 
   @media ${(props) => props.theme.breakpoints.sm} {
     margin-top: 70px;
     margin-left: 0px;
     width: 200px;
-  }
-`
-export const BtnText = styled.h2`
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 27px;
-  letter-spacing: 0em;
-  @media ${(props) => props.theme.breakpoints.sm} {
-    font-size: 13px;
   }
 `

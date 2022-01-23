@@ -13,6 +13,9 @@ export const Wrap2 = styled.div`
 export const Wrapper = styled.div`
   margin-right: 50px;
 
+  @media ${(props) => props.theme.breakpoints.md} {
+    margin-right: 90%;
+  }
   @media ${(props) => props.theme.breakpoints.sm} {
     margin-right: 90%;
   }

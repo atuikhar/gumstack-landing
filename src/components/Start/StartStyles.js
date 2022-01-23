@@ -12,7 +12,6 @@ export const Div = styled.div`
   width: 100%;
   text-align: center;
 
-  transform: matrix(1, 0, 0, 1, 0, 0);
   @media ${(props) => props.theme.breakpoints.sm} {
     background-image: url('/Rectangle2.png');
     background-size: cover;
@@ -42,6 +41,9 @@ export const Title = styled.h1`
   @media ${(props) => props.theme.breakpoints.sm} {
     margin-bottom: 30px;
     margin-top: 20px;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 34px;
   }
 `
 
@@ -58,7 +60,7 @@ export const StartTrailButton = styled.button`
   &:hover {
   }
   @media ${(props) => props.theme.breakpoints.sm} {
-    width: 224px;
+    width: 200px;
     height: 50px;
   }
 `
@@ -69,6 +71,12 @@ export const Text = styled.h3`
   font-weight: 700;
   line-height: 24px;
   letter-spacing: 0em;
+
+  @media ${(props) => props.theme.breakpoints.sm} {
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 27px;
+  }
 `
 export const Arrow = styled.img`
   padding-left: 20px;

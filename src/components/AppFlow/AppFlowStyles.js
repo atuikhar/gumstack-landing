@@ -25,8 +25,8 @@ export const GridWrapper = styled(Grid)`
 `
 
 export const WrapperContent = styled(Container)`
-  @media ${(props) => props.theme.breakpoints.sm} {
-    margin: 1px;
+  @media ${(props) => props.theme.breakpoints.xl} {
+    text-align: center;
   }
 `
 
@@ -67,7 +67,7 @@ export const Paragraph = styled.h5`
 
 export const ShowImg = styled.img`
   @media ${(props) => props.theme.breakpoints.sm} {
-    width: 300px;
+    width: 250px;
   }
 `
 
@@ -79,6 +79,7 @@ export const ListItemContainer = styled(ListItem)`
     margin-top: 20px;
     margin-left: 1px;
     padding: 1px;
+    text-align: center;
   }
 `
 
@@ -114,6 +115,8 @@ export const GetStarted = styled.button`
   }
   @media ${(props) => props.theme.breakpoints.sm} {
     margin-top: 70px;
+    width: 200px;
+    margin-left: 0px;
   }
 `
 export const BtnText = styled.h2`
@@ -122,4 +125,9 @@ export const BtnText = styled.h2`
   font-weight: 700;
   line-height: 27px;
   letter-spacing: 0em;
+  @media ${(props) => props.theme.breakpoints.sm} {
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 27px;
+  }
 `

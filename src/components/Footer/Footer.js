@@ -18,7 +18,7 @@ const Footer = () => {
             sm={12}
             md={5}
             lg={5}
-            order={{ xs: 4, sm: 4, md: 4, lg: 2 }}
+            order={{ xs: 4, sm: 4, md: 2, lg: 2 }}
           >
             <Text style={{ textAlign: 'center' }}>
               <ImgC src="/c.png" />
@@ -31,7 +31,7 @@ const Footer = () => {
             sm={12}
             md={3}
             lg={3}
-            order={{ xs: 2, sm: 2, md: 2, lg: 3 }}
+            order={{ xs: 2, sm: 2, md: 3, lg: 3 }}
           >
             <Text>Terms & Conditions</Text>
           </Grid>

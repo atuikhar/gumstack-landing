@@ -34,13 +34,13 @@ const AppFlow = () => {
               item
               xs={12}
               sm={12}
-              md={5}
-              lg={5}
+              md={12}
+              lg={6}
               sx={{ marginTop: '100px' }}
             >
               <ShowImg src="/Date.png" />
             </GridWrapper>
-            <Grid item xs={12} sm={12} md={7} lg={7}>
+            <Grid item xs={12} sm={12} md={12} lg={6}>
               <Paragraph>Schedule callback when you are not around </Paragraph>
               <GridContent>
                 <ListItemContainer>
@@ -72,7 +72,7 @@ const AppFlow = () => {
               item
               xs={12}
               sm={12}
-              md={7}
+              md={12}
               lg={7}
               order={{ xs: 5, sm: 5, md: 3, lg: 3 }}
             >
@@ -107,7 +107,7 @@ const AppFlow = () => {
               item
               xs={12}
               sm={12}
-              md={5}
+              md={12}
               lg={5}
               order={{ xs: 4, sm: 4 }}
               sx={{ marginTop: '100px' }}
