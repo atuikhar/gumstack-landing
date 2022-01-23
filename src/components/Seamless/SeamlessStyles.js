@@ -53,6 +53,12 @@ export const Paragraph = styled.h5`
     line-height: 20px;
     letter-spacing: 0em;
   }
+  @media ${(props) => props.theme.breakpoints.xs} {
+    margin: 0;
+    font-size: 8px;
+    font-weight: 100;
+    line-height: 10px;
+  }
 `
 
 export const Text = styled.h4`
@@ -100,6 +106,10 @@ export const ShowImg = styled.img`
 export const Arrow = styled.img`
   padding-left: 20px;
   height: 10px;
+  @media ${(props) => props.theme.breakpoints.xs} {
+    padding-left: 5px;
+    height: 5px;
+  }
 `
 
 export const GetInTouch = styled.button`
@@ -114,6 +124,11 @@ export const GetInTouch = styled.button`
   @media ${(props) => props.theme.breakpoints.sm} {
     margin-top: 70px;
   }
+  @media ${(props) => props.theme.breakpoints.xs} {
+    margin-top: 70px;
+    width: 120px;
+    height: 40px;
+  }
 `
 export const BtnText = styled.h2`
   font-size: 18px;
@@ -125,6 +140,11 @@ export const BtnText = styled.h2`
     font-size: 15px;
     font-weight: 500;
     line-height: 20px;
+  }
+  @media ${(props) => props.theme.breakpoints.xs} {
+    font-size: 7px;
+    font-weight: 100;
+    line-height: 10px;
   }
 `
 

@@ -14,6 +14,7 @@ import {
   CheckIcon,
   Wrap,
   Wrap1,
+  P,
 } from './IntegrationStyles'
 
 const Int = () => {
@@ -83,15 +84,7 @@ const Int = () => {
                 Talk To Our Developer
                 <Arrow src="/Arrow.png" />
               </BtnText>
-              <span
-                style={{
-                  color: '#000',
-                  position: 'relative',
-                  top: '25px',
-                }}
-              >
-                Powered by Gumstack
-              </span>
+              <P>Powered by Gumstack</P>
             </TalkToDeveloper>
           </Div1>
         </Wrap>

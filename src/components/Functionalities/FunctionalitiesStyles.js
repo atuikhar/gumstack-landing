@@ -76,6 +76,10 @@ export const Image = styled.img`
 export const Arrow = styled.img`
   padding-left: 20px;
   height: 10px;
+  @media ${(props) => props.theme.breakpoints.xs} {
+    padding-left: 10px;
+    height: 5px;
+  }
 `
 
 export const GetStarted = styled.button`
@@ -96,6 +100,10 @@ export const GetStarted = styled.button`
     margin-top: 70px;
     width: 200px;
   }
+  @media ${(props) => props.theme.breakpoints.xs} {
+    margin-top: 70px;
+    width: 130px;
+  }
 `
 export const BtnText = styled.h2`
   font-size: 18px;
@@ -108,5 +116,10 @@ export const BtnText = styled.h2`
     font-size: 15px;
     font-weight: 500;
     line-height: 27px;
+  }
+  @media ${(props) => props.theme.breakpoints.xs} {
+    font-size: 8px;
+    font-weight: 500;
+    line-height: 15px;
   }
 `

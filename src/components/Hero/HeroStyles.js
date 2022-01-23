@@ -55,6 +55,10 @@ export const Title = styled.h1`
     line-height: 50px;
     letter-spacing: 0em;
   }
+  @media ${(props) => props.theme.breakpoints.xs} {
+    margin-left: 0;
+    font-size: 20px;
+  }
 `
 
 export const TextBig = styled.h3`
@@ -82,6 +86,9 @@ export const TextSmall = styled.h3`
   display: none;
   @media ${(props) => props.theme.breakpoints.md} {
     display: block;
+  }
+  @media ${(props) => props.theme.breakpoints.xs} {
+    font-size: 10px;
   }
 `
 export const Paragraph = styled.h5`
@@ -118,6 +125,12 @@ export const SubmitEmail = styled.button`
     margin-bottom: 60px;
     width: 200px;
   }
+  @media ${(props) => props.theme.breakpoints.xs} {
+    margin-top: 60px;
+    margin-bottom: 60px;
+    width: 100px;
+    height: 30px;
+  }
 `
 
 export const BtnText = styled.h3`
@@ -130,6 +143,10 @@ export const BtnText = styled.h3`
   display: flex;
   justify-content: center;
   align-items: center;
+  @media ${(props) => props.theme.breakpoints.xs} {
+    font-size: 7px;
+    line-height: 20px;
+  }
 `
 
 export const Image = styled.img`
@@ -150,9 +167,16 @@ export const Image = styled.img`
     width: 250px;
     margin-bottom: 50px;
   }
+  @media ${(props) => props.theme.breakpoints.xs} {
+    width: 150px;
+    margin-bottom: 50px;
+  }
 `
 
 export const Arrow = styled.img`
   padding-left: 20px;
   height: 10px;
+  @media ${(props) => props.theme.breakpoints.xs} {
+    padding-left: 5px;
+  }
 `

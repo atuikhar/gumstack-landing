@@ -68,11 +68,17 @@ export const ShowImg = styled.img`
   @media ${(props) => props.theme.breakpoints.sm} {
     width: 250px;
   }
+  @media ${(props) => props.theme.breakpoints.xs} {
+    width: 150px;
+  }
 `
 
 export const Arrow = styled.img`
   padding-left: 10px;
   height: 10px;
+  @media ${(props) => props.theme.breakpoints.xs} {
+    padding-left: 5px;
+  }
 `
 
 export const BtnText = styled.h2`
@@ -87,6 +93,11 @@ export const BtnText = styled.h2`
     font-size: 15px;
     font-weight: 500;
     line-height: 27px;
+  }
+  @media ${(props) => props.theme.breakpoints.xs} {
+    font-size: 8px;
+    font-weight: 500;
+    line-height: 15px;
   }
 `
 
@@ -151,4 +162,15 @@ export const TalkToDeveloper = styled.button`
     margin-left: 0px;
     width: 200px;
   }
+  @media ${(props) => props.theme.breakpoints.xs} {
+    margin-top: 70px;
+    margin-left: 0px;
+    width: 100px;
+  }
+`
+
+export const P = styled.span`
+  color: #fff;
+  position: relative;
+  top: 25px;
 `

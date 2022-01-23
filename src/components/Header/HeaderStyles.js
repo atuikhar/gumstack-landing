@@ -76,14 +76,11 @@ export const RightNav = styled.div`
 `
 
 export const MobileNavContainer = styled.div`
-  @media ${(props) => props.theme.breakpoints.xl} {
+  @media screen and (min-width: 768px) {
     display: none;
-  }
-  @media ${(props) => props.theme.breakpoints.xxl} {
-    display: none;
+    margin-right: 50px;
   }
   @media ${(props) => props.theme.breakpoints.lg} {
-    display: block;
     margin-right: 100px;
   }
   @media ${(props) => props.theme.breakpoints.md} {
@@ -104,6 +101,8 @@ export const NavItem = styled(MenuItem)`
 export const Arrow = styled.img`
   height: 5px;
   margin: 5px;
+  @media ${(props) => props.theme.breakpoints.sm} {
+  }
 `
 
 export const MobileNav = styled(MenuIcon)`

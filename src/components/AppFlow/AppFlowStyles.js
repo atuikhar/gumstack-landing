@@ -97,6 +97,9 @@ export const ShowImg = styled.img`
   @media ${(props) => props.theme.breakpoints.sm} {
     width: 250px;
   }
+  @media ${(props) => props.theme.breakpoints.xs} {
+    width: 150px;
+  }
 `
 
 export const CheckIcon = styled.img``
@@ -125,6 +128,10 @@ export const GridContent = styled(Container)`
 export const Arrow = styled.img`
   padding-left: 20px;
   height: 10px;
+  @media ${(props) => props.theme.breakpoints.xs} {
+    padding-left: 10px;
+    height: 5px;
+  }
 `
 
 export const GetStarted = styled.button`
@@ -146,6 +153,11 @@ export const GetStarted = styled.button`
     width: 200px;
     margin-left: 0px;
   }
+  @media ${(props) => props.theme.breakpoints.xs} {
+    margin-top: 70px;
+    width: 130px;
+    margin-left: 0px;
+  }
 `
 export const BtnText = styled.h2`
   font-size: 18px;
@@ -157,5 +169,9 @@ export const BtnText = styled.h2`
     font-size: 15px;
     font-weight: 500;
     line-height: 27px;
+  }
+  @media ${(props) => props.theme.breakpoints.xs} {
+    font-size: 10px;
+    line-height: 15px;
   }
 `
